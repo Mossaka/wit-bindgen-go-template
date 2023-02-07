@@ -1,8 +1,23 @@
 [package]
 name = "wit-bindgen-go-template"
-version = "0.1.0"
+version.workspace = true
+edition.workspace = true
+
+[workspace]
+
+[workspace.package]
 edition = "2021"
+version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+anyhow = "1"
+wasmtime = { git = "https://github.com/bytecodealliance/wasmtime", features = ["component-model"], branch = 'release-6.0.0' }
+host = { git = "https://github.com/bytecodealliance/preview2-prototyping" }
+hyper = "0.14"
+tokio = { version = "1.25", features = ["full"] }
+wasm-encoder = "0.24.0"
+wit-parser = "0.6.0"
+wit-component = "0.7.0"
+wasi-common =  { git = "https://github.com/bytecodealliance/preview2-prototyping" }
+wasi-cap-std-sync = { git = "https://github.com/bytecodealliance/preview2-prototyping" }
