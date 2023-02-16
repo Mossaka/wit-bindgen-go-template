@@ -30,4 +30,5 @@ func (i HttpImpl) HandleHttp(req HandlerRequest) Result[HandlerResponse, Handler
 	return res
 }
 
+//go:generate wit-bindgen tiny-go ../wit/world.wit --out-dir=gen
 func main() {}
