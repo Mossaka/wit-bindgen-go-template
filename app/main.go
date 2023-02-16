@@ -1,18 +1,18 @@
 package main
 
 import (
-	. "app/gen"
+	handler "app/gen"
 )
 
 func init() {
 	a := HttpImpl{}
-	SetHandler(a)
+	handler.SetHandler(a)
 }
 
 type HttpImpl struct {
 }
 
-func (i HttpImpl) HandleHttp(req HandlerRequest) Result[HandlerResponse, HandlerHttpError] {
+func (i HttpImpl) HandleHttp(req handler.HandlerRequest) handler.Result[handler.HandlerResponse, handler.HandlerHttpError] {
 	for _, header := range req.Headers {
 		println(header.F0)
 		println(header.F1)
@@ -21,11 +21,11 @@ func (i HttpImpl) HandleHttp(req HandlerRequest) Result[HandlerResponse, Handler
 		println(arg.F0)
 		println(arg.F1)
 	}
-	response := HandlerResponse{}
+	response := handler.HandlerResponse{}
 	response.Status = 200
-	response.Body = Some([]byte("hello world!"))
+	response.Body = handler.Some([]byte("hello world!"))
 
-	var res Result[HandlerResponse, HandlerHttpError]
+	var res handler.Result[handler.HandlerResponse, handler.HandlerHttpError]
 	res.Set(response)
 	return res
 }

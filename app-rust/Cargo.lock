@@ -280,7 +280,7 @@ dependencies = [
 [[package]]
 name = "wit-bindgen"
 version = "0.3.0"
-source = "git+https://github.com/mossaka/wit-bindgen?rev=b00661f8cd4604518b74efa9dbd88a5195b205d7#b00661f8cd4604518b74efa9dbd88a5195b205d7"
+source = "git+https://github.com/bytecodealliance/wit-bindgen?rev=16994da9d568a4392ee846d1ed7c2a5d1d2086c2#16994da9d568a4392ee846d1ed7c2a5d1d2086c2"
 dependencies = [
  "bitflags",
  "wit-bindgen-guest-rust-macro",
@@ -289,7 +289,7 @@ dependencies = [
 [[package]]
 name = "wit-bindgen-core"
 version = "0.3.0"
-source = "git+https://github.com/mossaka/wit-bindgen?rev=b00661f8cd4604518b74efa9dbd88a5195b205d7#b00661f8cd4604518b74efa9dbd88a5195b205d7"
+source = "git+https://github.com/bytecodealliance/wit-bindgen?rev=16994da9d568a4392ee846d1ed7c2a5d1d2086c2#16994da9d568a4392ee846d1ed7c2a5d1d2086c2"
 dependencies = [
  "anyhow",
  "wit-component",
@@ -299,7 +299,7 @@ dependencies = [
 [[package]]
 name = "wit-bindgen-gen-guest-rust"
 version = "0.3.0"
-source = "git+https://github.com/mossaka/wit-bindgen?rev=b00661f8cd4604518b74efa9dbd88a5195b205d7#b00661f8cd4604518b74efa9dbd88a5195b205d7"
+source = "git+https://github.com/bytecodealliance/wit-bindgen?rev=16994da9d568a4392ee846d1ed7c2a5d1d2086c2#16994da9d568a4392ee846d1ed7c2a5d1d2086c2"
 dependencies = [
  "heck",
  "wasm-metadata",
@@ -311,7 +311,7 @@ dependencies = [
 [[package]]
 name = "wit-bindgen-gen-rust-lib"
 version = "0.3.0"
-source = "git+https://github.com/mossaka/wit-bindgen?rev=b00661f8cd4604518b74efa9dbd88a5195b205d7#b00661f8cd4604518b74efa9dbd88a5195b205d7"
+source = "git+https://github.com/bytecodealliance/wit-bindgen?rev=16994da9d568a4392ee846d1ed7c2a5d1d2086c2#16994da9d568a4392ee846d1ed7c2a5d1d2086c2"
 dependencies = [
  "heck",
  "wit-bindgen-core",
@@ -320,7 +320,7 @@ dependencies = [
 [[package]]
 name = "wit-bindgen-guest-rust-macro"
 version = "0.3.0"
-source = "git+https://github.com/mossaka/wit-bindgen?rev=b00661f8cd4604518b74efa9dbd88a5195b205d7#b00661f8cd4604518b74efa9dbd88a5195b205d7"
+source = "git+https://github.com/bytecodealliance/wit-bindgen?rev=16994da9d568a4392ee846d1ed7c2a5d1d2086c2#16994da9d568a4392ee846d1ed7c2a5d1d2086c2"
 dependencies = [
  "anyhow",
  "proc-macro2",
