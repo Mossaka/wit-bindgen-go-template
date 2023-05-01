@@ -1,10 +1,8 @@
-wit_bindgen::generate!("world" in "../wit");
-
-use handler::*;
+use bindings::handler::*;
 
 struct Handler {}
 
-impl handler::Handler for Handler {
+impl bindings::handler::Handler for Handler {
     fn handle_http(req: Request) -> Result<Response, HttpError> {
         for header in req.headers.iter() {
             println!("{}: {}", header.0, header.1);
@@ -23,4 +21,4 @@ impl handler::Handler for Handler {
     }
 }
 
-export_serverless!(Handler);
+bindings::export!(Handler);

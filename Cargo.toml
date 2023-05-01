@@ -12,14 +12,14 @@ version = "0.1.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 anyhow = "1"
-wasmtime = { git = "https://github.com/bytecodealliance/wasmtime", features = ["component-model"], branch = 'release-6.0.0' }
-host = { git = "https://github.com/bytecodealliance/preview2-prototyping" }
+wasmtime = { version = "7.0.0", features = ["component-model"] }
+host = { git = "https://github.com/bytecodealliance/preview2-prototyping", rev = "408f0bfcec31a1880b6df06341f996e8e445a442" }
 hyper = { version = "0.14", features = ["full"] }
 tokio = { version = "1.25", features = ["full"] }
-wasm-encoder = "0.24.0"
-wit-parser = "0.6.0"
-wit-component = "0.7.0"
-wasi-common =  { git = "https://github.com/bytecodealliance/preview2-prototyping" }
-wasi-cap-std-sync = { git = "https://github.com/bytecodealliance/preview2-prototyping" }
+wasm-encoder = "0.25.0"
+wit-parser = "0.6.4"
+wit-component = "0.7.4"
+wasi-common =  { git = "https://github.com/bytecodealliance/preview2-prototyping", rev = "408f0bfcec31a1880b6df06341f996e8e445a442" }
+wasi-cap-std-sync = { git = "https://github.com/bytecodealliance/preview2-prototyping", rev = "408f0bfcec31a1880b6df06341f996e8e445a442" }
 routerify = "3"
 routerify-cors = "3"

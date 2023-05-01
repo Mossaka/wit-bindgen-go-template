@@ -9,6 +9,11 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-wit-bindgen = { git = "https://github.com/bytecodealliance/wit-bindgen", rev = "16994da9d568a4392ee846d1ed7c2a5d1d2086c2" }
+wit-bindgen = { version = "0.4.0", features = ["realloc"], default-features = false }
+
+[package.metadata.component.target]
+path = "../wit"
+
+[package.metadata.component.dependencies]
 
 [workspace]

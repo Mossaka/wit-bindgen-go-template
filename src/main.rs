@@ -2,7 +2,7 @@ use std::{convert::Infallible, net::SocketAddr, path::PathBuf};
 
 use anyhow::{bail, Context, Result};
 use handler::Response;
-use host::add_to_linker;
+use host::command::add_to_linker;
 
 use wasi_cap_std_sync::WasiCtxBuilder;
 use wasmtime::{
