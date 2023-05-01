@@ -11,7 +11,7 @@ impl bindings::handler::Handler for Handler {
         for arg in req.params.iter() {
             println!("{}: {}", arg.0, arg.1);
         }
-        
+
         let response = Response {
             status: 200,
             headers: None,
