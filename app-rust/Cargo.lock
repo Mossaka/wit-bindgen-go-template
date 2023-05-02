@@ -6,6 +6,14 @@ version = 3
 name = "app-rust"
 version = "0.1.0"
 dependencies = [
+ "app_rust-bindings",
+ "wit-bindgen",
+]
+
+[[package]]
+name = "app_rust-bindings"
+version = "0.1.0"
+dependencies = [
  "wit-bindgen",
 ]
 

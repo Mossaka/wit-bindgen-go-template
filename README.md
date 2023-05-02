@@ -8,6 +8,7 @@ This template repository will help you getting started with authoring a wasm com
 - `Go 1.20`
 - `wasm-tools 1.0.28`
 - [cargo-component 2101df558d](https://github.com/bytecodealliance/cargo-component/commits/2101df558d116f6bebab808bb6f29c672410ef7b)
+- `wit-bindgen-cli` tag "wit-bindgen-0.4.0"
 
 ## Build App
 The Go app is located in /app directory under the root of the repository. The app is built using TinyGo and the build script is provided in the Makefile.
