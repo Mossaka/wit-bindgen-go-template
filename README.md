@@ -19,6 +19,19 @@ To build the app, run the following command:
 make build-go
 ```
 
+To build js app, run the following command:
+
+```bash
+make install-js
+make build-js
+```
+
+To build rs app, run the following command:
+
+```bash
+make build-rust
+```
+
 ## Run App
 To run the app, run the following command:
 
