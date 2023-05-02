@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "http handler in js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jiaxiao zhou",
+  "license": "ISC",
+  "dependencies": {
+    "@bytecodealliance/jco": "0.5.3",
+    "@bytecodealliance/componentize-js": "0.0.3"
+  },
+  "type": "module",
+  "resolutions": {
+    "@bytecodealliance/jco": "0.5.3",
+    "@bytecodealliance/componentize-js": "0.0.3"
+  }
+}

@@ -37,6 +37,12 @@ build-rust:
 	cd app-rust && cargo component build --release  && mv target/wasm32-wasi/release/app_rust.wasm ../rust.component.wasm
 	wasm-tools validate rust.component.wasm --features component-model
 
+install-js:
+	cd app-js && npm install
+
+build-js:
+	cd app-js && ./node_modules/.bin/jco componentize app.js -w ../wit/world.wit -o ../js.component.wasm
+
 clean:
 	rm -rf *.wasm
 
