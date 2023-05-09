@@ -47,7 +47,7 @@ clean:
 	rm -rf *.wasm
 
 run: clean build-go build-rust 
-	cargo run -- main.component.wasm 
+	cargo run --release -- main.component.wasm 
 
 test:
 	curl -X GET http://127.0.0.1:3001
